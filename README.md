@@ -27,7 +27,7 @@ ansible all -m user -a "name=user1 group=minio password=cryptedpass" -i ./invent
 ```
 6. Copy file to minio bucket
 ```
-ansible minio1 -m copy -a "src=~/test.jpg dest=/data/minio/mybucketname/" -i inventory
+ansible minio1 -m copy -a "src=~/test-minio/test.jpg dest=/data/minio/mybucketname/" -i inventory
 ```
 7. Run script for download this file
 ```
