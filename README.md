@@ -20,6 +20,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 vagrant up 
 ```
 When installing, you will need to select a network adapter.
+
 5. Add user to hosts:
 ```
 ansible all -m user -a "name=user1 group=minio password=cryptedpass" -i ./inventory
